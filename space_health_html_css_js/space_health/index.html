@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#081525"><title>Space Health</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <div class="brand"><span class="logo">✦</span><div><b>SPACE HEALTH</b><small>مساعدك الصحي الفضائي</small></div></div>
+  <nav>
+    <button class="nav active" data-page="home">⌂ الرئيسية</button>
+    <button class="nav" data-page="readings">▥ القراءات الصحية</button>
+    <button class="nav" data-page="alerts">♧ التنبيهات <i id="badge">2</i></button>
+    <button class="nav" data-page="watch">⌚ الساعة الذكية</button>
+  </nav>
+  <div class="side-status"><span class="dot amber"></span><div><b>وضع تجريبي</b><small>لا يوجد اتصال بمستشعرات</small></div></div>
+</aside>
+<main>
+<header><div><small class="eyebrow">مركز المتابعة الصحية · المهمة القمرية</small><h1 id="title">نظرة عامة</h1></div><div class="user"><span>● المهمة نشطة · محاكاة</span><b>ر</b></div></header>
+
+<section class="page active" id="home">
+  <div class="hero"><div><small>SPACE CREW HEALTH</small><h2>مرحباً بك في رحلتك، رائد الفضاء 🚀</h2><p>تابع مؤشراتك الحيوية واطّلع على حالة نظام المراقبة.</p></div><div class="planet"><span>✦</span></div></div>
+  <div class="section-title"><div><h2>المؤشرات الحيوية</h2><p>بيانات توضيحية للواجهة وليست قياسات فعلية</p></div><small>آخر تحديث: الآن</small></div>
+  <div class="metrics">
+    <article class="metric"><div><span class="symbol cyan">◆</span> مستوى الجلوكوز</div><strong>110 <small>mg/dL</small></strong><label>قيمة تجريبية</label></article>
+    <article class="metric"><div><span class="symbol red">♡</span> معدل ضربات القلب</div><strong>75 <small>BPM</small></strong><label>قيمة تجريبية</label></article>
+    <article class="metric"><div><span class="symbol green">◌</span> تشبع الأكسجين</div><strong>98 <small>%</small></strong><label>قيمة تجريبية</label></article>
+  </div>
+  <div class="columns">
+    <article class="panel"><div class="panel-head"><div><h3>متابعة الجلوكوز</h3><p>رسم توضيحي لقراءات افتراضية خلال اليوم</p></div><span class="pill">آخر 6 ساعات</span></div>
+      <div class="chart"><div class="y"><span>180</span><span>140</span><span>100</span><span>60</span></div><svg viewBox="0 0 600 180" preserveAspectRatio="none" aria-label="رسم توضيحي"><defs><linearGradient id="fill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#35c9d8" stop-opacity=".3"/><stop offset="1" stop-color="#35c9d8" stop-opacity="0"/></linearGradient></defs><path class="grid" d="M0 20H600M0 65H600M0 110H600M0 155H600"/><path class="area" d="M0 110 Q50 100 90 85T190 95T290 65T390 115T490 60T600 45V180H0Z"/><path class="line" d="M0 110 Q50 100 90 85T190 95T290 65T390 115T490 60T600 45"/></svg><div class="x"><span>08:00</span><span>10:00</span><span>12:00</span><span>14:00</span><span>16:00</span><span>18:00</span></div></div>
+    </article>
+    <article class="panel device"><div class="panel-head"><div><h3>حالة الساعة</h3><p>نظام الاتصال والمزامنة</p></div><span>⌚</span></div><div class="watch-face"><b>--:--</b><small>NO SIGNAL</small></div><p><span class="dot amber"></span> غير متصلة</p><button class="secondary" data-goto="watch">تفاصيل الجهاز</button></article>
+  </div>
+  <div class="notice">ⓘ <p><b>تنبيه مهم:</b> هذا نموذج واجهة تجريبي. الأرقام والرسوم افتراضية ولا تمثل قياسات طبية حقيقية. لا تعتمد عليها في التشخيص أو تعديل العلاج.</p></div>
+</section>
+
+<section class="page" id="readings">
+  <div class="section-title"><div><h2>القراءات الصحية</h2><p>عرض توضيحي للمؤشرات داخل النموذج</p></div></div>
+  <div class="reading panel"><span class="symbol cyan">◆</span><div><b>الجلوكوز</b><small>قراءة افتراضية</small></div><strong>110 <small>mg/dL</small></strong></div>
+  <div class="reading panel"><span class="symbol red">♡</span><div><b>ضربات القلب</b><small>قراءة افتراضية</small></div><strong>75 <small>BPM</small></strong></div>
+  <div class="reading panel"><span class="symbol green">◌</span><div><b>تشبع الأكسجين</b><small>قراءة افتراضية</small></div><strong>98 <small>%</small></strong></div>
+  <div class="notice">ⓘ <p>هذه القيم ثابتة بغرض تجربة التصميم فقط، ولا يتم استقبالها من ساعة أو مستشعر.</p></div>
+</section>
+
+<section class="page" id="alerts">
+  <div class="section-title"><div><h2>مركز التنبيهات</h2><p>رسائل توضيحية لاختبار شكل التنبيهات</p></div><button class="linkbtn" id="clear">تحديد الكل كمقروء</button></div>
+  <div id="alertList">
+    <article class="reading panel unread"><span class="symbol amber">⌚</span><div><b>الساعة غير متصلة</b><small>قم بربط الساعة لبدء استقبال البيانات عند توفر التكامل.</small></div></article>
+    <article class="reading panel unread"><span class="symbol cyan">i</span><div><b>وضع المحاكاة مفعل</b><small>المؤشرات الحالية قيم افتراضية لأغراض العرض فقط.</small></div></article>
+  </div>
+</section>
+
+<section class="page" id="watch">
+  <div class="section-title"><div><h2>الساعة الذكية</h2><p>إدارة حالة الجهاز والاتصال</p></div></div>
+  <article class="panel watch-details"><div class="bigwatch">⌚</div><h2>Space Health Watch</h2><p id="watchState">● غير متصلة</p><p>لم يتم ربط ساعة فعلية بهذا النموذج حتى الآن.</p><button class="primary" id="connect">تجربة تغيير حالة الاتصال</button><small>زر تجريبي فقط، ولا ينشئ اتصال Bluetooth حقيقياً.</small></article>
+</section>
+<footer>SPACE HEALTH <span>واجهة أولية لمشروع مراقبة صحة رائد الفضاء</span></footer>
+</main>
+</div>
+<div id="toast" role="status"></div>
+<script src="script.js"></script>
+</body></html>
